@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    align-items: center;
+    display: flex;
+    padding: 7px 10px;
+    justify-content: space-between;
+    background-color: white;
+    color: gold;
+  border-radius: 3px;
+  width: 80px;
+}
+.fa-solid{
+    color: goldenrod;
+   
+}
+.cart p{
+    height: 21px;
+    width: 21px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+.sidebar{
+   width:40%;
+   background-color: #eee;
+   border-radius: 5px;
+   margin-left: 20px;
+   padding: 15px;
+   box-sizing: border-box;
+   text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 20px;
+   align-items: center;
+    color: white;
+    padding: 7px;
+  
+
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid black;
+}
+
