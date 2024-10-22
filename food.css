@@ -1,0 +1,363 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    min-height: 100px;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300px;
+    
+}
+.banner{
+    position: relative;
+    width:100%;
+   min-height:100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(food.png);
+    background-size: cover;
+}
+.banner .content{
+    color: antiquewhite;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+.banner .content h1{
+    font-size: 3.7rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner .content p{
+
+    font-size:1.8rem;
+    font-weight: 500;
+    font-family:  Courier, monospace,'jokerman',cursive,bold;
+    
+}
+.btn{
+    font-size: 1.2rem;
+    background:#ff0157;
+    text-decoration: none;
+    color:aliceblue;
+    text-transform: uppercase;
+    display:inline-block;
+    margin-top: 20px;
+    padding:10px 30px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+ .btn{
+
+    font-size: 1.2rem;
+    background:#ff0157;
+    text-decoration: none;
+    color:aliceblue;
+    text-transform: uppercase;
+    display:inline-block;
+    margin-top: 20px;
+    padding:10px 30px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 7px;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 1200px;
+    
+    padding: 20px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: white;
+    padding: 2px 100px;
+    box-shadow: 0 5px 20px;
+}
+header .logo{
+    color: aliceblue;
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+header .logo .span{
+    color: #ff0157;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .navigation{
+    font-size: 1.7rem;
+  margin-right: 50px;
+    position: relative;
+    display: flex;
+    
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 29px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: aliceblue;
+   font-weight: 500;
+}
+header.sticky .navigation li a{
+ 
+    color: #111;
+
+}
+header.sticky .navigation li a:hover{
+    color:#ff0157
+}
+section.about {
+    padding: 100px;
+
+}
+.row{
+    
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color:#111;
+    font-size: 2em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+.title span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.about .row {
+    display: flex;
+    justify-content: space-between;
+}
+.about .row p{
+    font-size: 20px;
+}
+.about .row img {
+    position: relative;
+    top:0;
+    left:0;
+     border-radius: 20px;
+       width:350px;
+       height: 300px;
+    
+}
+section.menu{
+    padding: 100px;
+}
+.titleN{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width:340px;
+    margin:20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .content .box .image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .image img{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px ;
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+section .expert{
+    padding: 100px;
+
+}
+
+.expert .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+.expert .content .box{
+    width:250px;
+    margin: 15px;
+}
+.expert .content .box .image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .image img{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .content .box .text{
+    padding: 15px 0 5px ;
+}
+.expert .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.contactfrom{
+    padding: 55px 50px;
+    background: #fff;
+    max-width: 300px;
+       margin-left: 40px;
+    margin-top: 50px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.contactfrom h3{
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.contactfrom .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactfrom .inputBox input,
+.contactfrom .inputBox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactfrom .inputBox input[type=submit]{
+    font-size: 1em;
+    display: inline-block;
+    font-weight: 500;
+    background: #ff0157;
+    color:#fff;
+    text-transform: uppercase;
+    max-width: 100px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+}
+.copyrighttext{
+    padding: 5px 30px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.copyrighttext p{
+    letter-spacing: 2px;
+    color: #111;
+    font-size: 1rem;
+}
+.copyrighttext a{
+    color: #ff0157;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.container{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-left: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.container .items {
+    
+    width:218px;
+    background:rgba(179, 164, 164, 0.2);
+    padding:10px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,rgb(248, 248, 33),white,rgb(216, 5, 5));
+
+}
+
+.container .items .item_image{
+    width: 210px;
+    height: 220px;
+    border:3px solid rgba(12, 1, 1, 0.2);
+}
+ h2,h3{
+    padding: 8px;
+    margin-left: 30px;
+    color: rgb(5, 110, 79);
+}
+span{
+    color: rgb(238, 6, 6);
+}
+.btn{
+    height: 30px;
+    width: 90px;
+    font-size: 18px;
+    align-items: center;
+    margin-left: 50px;
+    cursor: pointer;
+    border:1px solid black;
+    background: white;
+    outline: none;
+    border-radius: 3px;
+}
+.btn:hover{
+    background: rgba(68, 65, 65, 0.3);
+    border:1px solid black;
+}
+.container .items .item_image:hover {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+
+
+
+
+
+
+
