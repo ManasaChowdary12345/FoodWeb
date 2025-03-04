@@ -32,17 +32,18 @@
     <link rel="stylesheet" href="food.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Food <span>.</span></a>
-        <ul class="navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#expert">Expert</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
-        </ul>
-    </header>
+  <header>
+    <a href="#" class="logo">Food <span>.</span></a>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger Icon -->
+    <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="#expert" onclick="toggleMenu()">Expert</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</header>
+
     <section>
          <div  class='banner' id="banner">
             <div class="content">
@@ -130,7 +131,7 @@
             <div class="titleN">
                 <h2 class="title"> Our Kitchen  <span>E</span>xpert</h2>
              </div>
-        <div class="content">
+        <div class="content1">
           <div class="box">
           <div class="image">
             <img src="vkas kanna.png">
@@ -184,7 +185,7 @@
                 <textarea  placeholder="Name"></textarea>
             </div>
             <div class="inputBox">
-                <input type="submit" value="send">
+                <input type="submit" onclick="myfun()" value="send">
             </div>
          </div>
          
@@ -198,5 +199,16 @@
             header.classList.toggle("sticky",window.scrollY > 0);
         });
     </script>
+ <script>
+  function toggleMenu() {
+      const navMenu = document.querySelector('.navigation');
+      navMenu.classList.toggle('show');  // Show or hide menu
+  }
+  function myfun(){
+    alert("Message send successfully")
+  }
+</script>
+
+  
 </body>
 </html>
